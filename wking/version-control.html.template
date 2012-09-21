@@ -704,7 +704,8 @@ git log --graph
 
       <p>
         If Dracula doesn't like working with the interpolated changes directly
-        (&lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, &gt;&gt;&gt;&gt;&gt;&gt;&gt;),
+        (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>,
+				<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>,
         there are several tools for displaying differences,
         or <a href="glossary.html#diff">diffs</a>,
         and helping to merge them.
