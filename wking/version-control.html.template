@@ -38,7 +38,7 @@
 
     <p>
       As soon Wolfman feels like he has completed a logical change
-      (for example, fixing any "secret liar" typos),
+      (for example, fixing any “secret liar” typos),
       he <a href="glossary.html#commit">commits</a> his work to his repository.
       He can go on making several successive commits in private.
       When is ready to share his changes,
@@ -95,7 +95,7 @@
 
     <p>
       Third, nothing that is committed to version control is ever lost,
-      so it acts like the "undo" feature in an editor.
+      so it acts like the <em>undo</em> feature in an editor.
       Version control can do this because
       it never actually overwrites the master copy in the repository.
       Instead, every time someone commits a new version it is saved on top of the previous one:
@@ -116,7 +116,7 @@
       Images, MP3s, PDFs, or Microsoft Word or Excel files aren't stored as text,
       though—they use specialized binary data formats.
       Most version control systems don't know how to deal with these formats,
-      so all they can say is, "These files differ."
+      so all they can say is, “These files differ.”
       The rest is up to you.
     </p>
 
@@ -251,7 +251,7 @@ git commit -m "Add Jupiter's moons (Io, Europa, Ganymede, and Calisto)." moons.t
         wants to give him a helpful hint about which planet they are orbiting.
         Good comments are as important in version control as they are in coding.
         Without them, it can be very difficult to figure out what the initial committer was thinking when you trying and debug their code in three years.
-        We can use comments like, "Changed things," and, "Fixed it," if we want,
+        We can use comments like, “Changed things,” and, “Fixed it,” if we want,
         but we'll only be creating trouble for our future selves.
       </p>
 
@@ -317,7 +317,7 @@ git commit -m "Add Jupiter's moons (Io, Europa, Ganymede, and Calisto)." moons.t
 
       <p>
         Notice that the commit is named with a <a href="glossary.html#hash">hash</a>.
-        Centralized version control systems usually use an incremented integer ("version 1", followed by "version 2", followed by "version 3", …).  
+        Centralized version control systems usually use an incremented integer (“version 1”, followed by “version 2”, followed by “version 3”, …).  
         This is less common in distributed systems,
         because when you change version 1,
         you'd expect to create version 2.
@@ -327,7 +327,7 @@ git commit -m "Add Jupiter's moons (Io, Europa, Ganymede, and Calisto)." moons.t
         Rather than argue over this sort of thing,
         distributed version control systems generate commit hashes that uniquely represent a commit,
         and use these hashes to refer to the commits
-        ("version 7c0da882b9df3b3fe003b7caa05ba6faff9c8b90").
+        (“version 7c0da882b9df3b3fe003b7caa05ba6faff9c8b90”).
         Because the full hash is a pain to type,
         you can abbreviate it as much as you like,
         so long as the abbreviation is unambiguous.
@@ -338,8 +338,8 @@ git commit -m "Add Jupiter's moons (Io, Europa, Ganymede, and Calisto)." moons.t
 
       <p>
         The commit hash applies to the commit message and a particular state of each versioned file.
-        When we talk about "version 7c0da8", we mean,
-        "The state of all files and directories at that point."
+        When we talk about “version 7c0da8”, we mean,
+        “The state of all files and directories at that point.”
         Older version control systems like CVS gave each file a new version number when it was updated,
         which meant that version 38 of one file could correspond in time to version 17 of another:
       </p>
@@ -372,7 +372,7 @@ git config user.email wolf@umi.com
 
       <p>
         Looking in the new file <code>moons.txt</code>,
-        Wolfman notices that Dracula has misspelled "Callisto"
+        Wolfman notices that Dracula has misspelled “Callisto”
         (it is supposed to have two L's.)
         Wolfman edits that line of the file:
       </p>
@@ -744,7 +744,7 @@ OPTIONS
 
       <p>
         Now that we have seen how to merge files and resolve conflicts,
-        we can look at how to use version control as an "infinite undo".
+        we can look at how to use version control as an “infinite undo”.
         Suppose that Wolfman is working late one night.
         His copy of the <code>monsters</code> project is in sync with Dracula's at 59aebf7c.
         He decides to edit the file <code>moons.txt</code>,
@@ -899,7 +899,7 @@ I---a---b---c---d---e  [master]
 </sc-script>
 
       <p>
-        Branches in version control repositories are often described as "parallel universes".
+        Branches in version control repositories are often described as “parallel universes”.
         Each branch starts off as a clone of the project at some moment in time
         (typically each time the software is released,
         or whenever work starts on a major new feature.
@@ -947,7 +947,7 @@ I---a---b---c---d---e  [master]
         Karl Fogel's excellent book
         <a href="bibliography.html#fogel-producing-oss"><cite>Producing Open Source Software</cite></a>,
         and Laura Wingerd and Christopher Seiwald's paper
-        "<a href="bibliography.html#wingerd-seiwald-scm">High-level Best Practices in Software Configuration Management</a>",
+        “<a href="bibliography.html#wingerd-seiwald-scm">High-level Best Practices in Software Configuration Management</a>”,
         talk about branches in much more detail.
         Projects usually don't need to do this until they have a dozen or more developers,
         or until several versions of their software are in simultaneous use,
@@ -990,7 +990,7 @@ I---a---b---c---d---e  [master]
         to make sure that putting your work on a commercially-operated machine
         that is probably in some other legal jurisdiction
         isn't going to cause trouble.
-        Many people assume that it's "just OK",
+        Many people assume that it's “just OK”,
         while others act as if not having asked will be an acceptable defense later on.
         Unfortunately,
         neither is true…
