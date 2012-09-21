@@ -1,0 +1,140 @@
+/* $Id: scb.css 1965 2011-06-16 16:51:39Z gvw $ */
+
+.comment {
+    color: purple;
+}
+
+.data {
+    color: darkmagenta;             /* data files */
+}
+
+.err {
+    color: darkred;                 /* standard error */
+    font-style: italic;
+}
+
+.fixme {
+    text-decoration: underline;     /* highlight things to fix */
+    color: darkred;
+}
+
+.highlight {
+    background-color: mistyrose;    /* highlighting in code blocks */
+}
+
+.in {
+    color: darkgreen;               /* things typed in */
+}
+
+.out {
+    color: darkblue;                /* things printed out */
+    font-style: italic;
+}
+
+.python {
+    color: black;                   /* Python source code */
+}
+
+a.dfn {
+    font-style: italic;             /* definitions of terms */
+}
+
+code {
+}
+
+div.box {
+    width: 44em;
+    background-color: mistyrose;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline-color: gray;
+    outline-width: 1px;
+    outline-style: solid;
+}
+
+div.comments {
+    font-style: italic;             /* comments from readers */
+}
+
+div.multi {
+    /* container for multiple adjacent <pre> blocks */
+}
+
+div.toc {
+}
+
+div.webpage {
+    border: solid;
+    background-color: #ffffaa;
+}
+
+body {
+    width: 48em;                    /* approximate a book-sized page */
+}
+
+body.firstdraft {
+    background-color: #e0ffc2;      /* complete first draft */
+}
+
+body.incomplete {
+    background-color: #ffffcc;      /* partially converted */
+}
+
+body.undone {
+    background-color: #ffcccc;      /* haven't even started conversion */
+}
+
+img.figure {
+    display: block;                 /* center images on page */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.logo {
+}
+
+/*
+p {
+		border-style:solid;
+		border-color:red;
+		border-width:15px;
+}
+*/
+
+p.boxtitle {
+    text-align: center;
+}
+
+p.quote {
+    font-style: italic;             /* highlight things to fix */
+}
+
+pre {
+    background-color: mintcream;    /* make code stuff stand out */
+}
+
+table.database {
+    border-collapse: collapse;      /* don't double-border database tables */
+}
+
+table.database td {
+    border: 1px solid darkblue;     /* outline database table cells */
+}
+
+table.performance td {
+    text-align: right;              /* performance data */
+    vertical-align: bottom;
+}
+
+table.summary td {
+    vertical-align: top;            /* top-align terms and definitions */
+}
+
+th {
+    text-align: left;               /* don't center table headings */
+}
