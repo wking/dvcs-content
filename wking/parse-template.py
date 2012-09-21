@@ -22,8 +22,12 @@ import shutil as _shutil
 import subprocess as _subprocess
 import tempfile as _tempfile
 
-import lxml.etree as _etree
-
+_lxml_import_error = None
+try:
+    import lxml.etree as _etree
+except ImportError as e:
+    _lxml_import_error = e
+    import xml.etree.ElementTree as _etree
 
 _LOG = _logging.getLogger('git-publish')
 _LOG.addHandler(_logging.StreamHandler())
@@ -332,15 +336,45 @@ def parse_template(template, datadir='.', prefix='sc-'):
         for element in template.findall('.//{}script'.format(prefix)):
             _LOG.debug(_etree.tostring(element).rstrip())
             new_element = environment.eval(element)
-            parent = element.getparent()
+            parent = getparent(template, element)
             if new_element is None:
-                element.getprevious().tail += element.tail
+                getprevious(template, element).tail += element.tail
                 parent.remove(element)
             else:
                 new_element.tail = element.tail
-                parent.replace(element, new_element)
+                replace(parent, element, new_element)
     finally:
         environment.cleanup()
+
+# lxml.etree compatibility functions for xml.etree.ElementTree
+
+def getparent(root, element):
+    if hasattr(element, 'getparent'):  # lxml.etree
+        return element.getparent()
+    else:  #xml.etree.ElementTree
+        for node in root.iter():
+            if element in node:
+                return node
+        raise ValueError((root, element))
+
+def getprevious(root, element):
+    if hasattr(element, 'getprevious'):  # lxml.etree
+        return element.getprevious()
+    else:  #xml.etree.ElementTree
+        parent = getparent(root, element)
+        previous = None
+        for node in parent:
+            if node == element:
+                return previous
+            previous = node
+
+def replace(parent, old, new):
+    if hasattr(parent, 'replace'):  # lxml.etree
+        return parent.replace(element, new_element)
+    else:  #xml.etree.ElementTree
+        index = list(parent).index(old)
+        parent.remove(old)
+        parent.insert(index, new)
 
 
 if __name__ == '__main__':
@@ -355,7 +389,7 @@ if __name__ == '__main__':
     for path in args.template:
         assert path.endswith('.template'), path
         target_path = path[:-len('.template')]
-        parser = _etree.XMLParser(resolve_entities=False)
+        parser = _etree.XMLParser()
         tree = _etree.parse(path, parser)
         root = tree.getroot()
         parse_template(root)
