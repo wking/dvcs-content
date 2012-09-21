@@ -997,9 +997,9 @@ I---a---b---c---d---e  [master]
       </p>
 
       <p>
-        If you want to host your own repository,
-        you can host a private only to you via secure shell (SSH),
-        or host a public repository via
+        If you want to host your own repository, you can host a
+        private repository via secure shell (SSH) or host a public
+        repository via
       </p>
 
       <ul>

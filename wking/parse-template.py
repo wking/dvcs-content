@@ -34,6 +34,11 @@ _LOG.addHandler(_logging.StreamHandler())
 #_LOG.setLevel(_logging.INFO)
 _LOG.setLevel(_logging.DEBUG)
 
+if _lxml_import_error is not None:
+    _LOG.error('could not import lxml.etree: {}'.format(
+            _lxml_import_error))
+    _LOG.warning('falling back on xml.etree.ElementTree')
+
 
 class ANSI (object):
     """ANSI color manipulation
@@ -370,7 +375,7 @@ def getprevious(root, element):
 
 def replace(parent, old, new):
     if hasattr(parent, 'replace'):  # lxml.etree
-        return parent.replace(element, new_element)
+        return parent.replace(old, new)
     else:  #xml.etree.ElementTree
         index = list(parent).index(old)
         parent.remove(old)
@@ -389,7 +394,10 @@ if __name__ == '__main__':
     for path in args.template:
         assert path.endswith('.template'), path
         target_path = path[:-len('.template')]
-        parser = _etree.XMLParser()
+        if _lxml_import_error is None:
+            parser = _etree.XMLParser(resolve_entities=False)
+        else:
+            parser = _etree.XMLParser()
         tree = _etree.parse(path, parser)
         root = tree.getroot()
         parse_template(root)
