@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- encoding: utf-8 -*-
 #
 # Copyright (C) 2012 W. Trevor King <wking@drexel.edu>
 #
