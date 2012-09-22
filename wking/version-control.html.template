@@ -919,7 +919,7 @@ I---a---b---c---d---e  [master]
         Then they <code>cherry-picked</code> another bugfix from commit <code>c</code> with commit <code>s</code>.
         With each change to the 1.0.x branch,
         they make a bugfix release
-        (e.g. <code>a</code> is 1.0.0, <code>b</code> is 1.0.1, …).
+        (e.g. <code>a</code> is 1.0.0, <code>r</code> is 1.0.1, …).
       </p>
 
       <p>
