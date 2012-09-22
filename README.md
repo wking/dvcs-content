@@ -3,3 +3,19 @@ dvcs-content
 
 We'll use this repo to consolidate existing git/Mercurial material and to converge on a
 master version that will be added to the Software Carpentry core content.
+
+See Also
+========
+
+* [C. Titus Brown, Git](http://ged.msu.edu/angus/git-intro.html)
+  ([source](https://github.com/ngs-docs/edda/blob/master/doc/git-intro.txt))
+* [Chris Cannam,
+  Mercurial](https://code.soundsoftware.ac.uk/projects/easyhg/wiki/SC2012BootcampPlan)
+* [JHU SWC 2012, local
+  Git](https://github.com/JHU-SWC-2012/SWC-bootcamp/tree/master/3a-VersionControlLocal)
+* [JHU SWC 2012, remote
+  Git](https://github.com/JHU-SWC-2012/SWC-bootcamp/tree/master/3b-VersionControlRemote)
+* [Katy Huff,
+  Git](https://github.com/thehackerwithin/PyTrieste/wiki/Lesson2a-VersionControl)
+* [Zach Williams,
+  Git](https://github.com/codeforamerica/skillshares/tree/master/git_basics)
