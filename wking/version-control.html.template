@@ -436,6 +436,15 @@ git commit --amend -m "moons: add Amalthea (nicer view of Jupiter)." moons.txt
         For basic version control,
         you won't need to dig this deep into the Git toolbox,
         but it's good to know these features are there if you need them.
+        See the
+        <a href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html#_recovering_from_upstream_rebase">
+          <code>RECOVERING FROM UPSTREAM REBASE</code></a> section of
+        <a href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html">
+          <code>git rebase --help</code></a>
+        for warnings against altering public commits.
+        Altering private commits,
+        where noone else has had a chance to pull the commit,
+        does not suffer from these complications.
       </p>
 
       <p>
