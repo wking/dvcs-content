@@ -14,6 +14,8 @@ See Also
   ([source](https://github.com/ngs-docs/ngs-notebooks))
 * [Chris Cannam,
   Mercurial](https://code.soundsoftware.ac.uk/projects/easyhg/wiki/SC2012BootcampPlan)
+* [Ethan White, Numpy](http://www.programmingforbiologists.org/lectures-and-notes)
+  ([source](https://github.com/weecology/progbio/))
 * [JHU SWC 2012, local
   Git](https://github.com/JHU-SWC-2012/SWC-bootcamp/tree/master/3a-VersionControlLocal)
 * [JHU SWC 2012, remote
