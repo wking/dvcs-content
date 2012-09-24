@@ -4,6 +4,13 @@ dvcs-content
 We'll use this repo to consolidate existing git/Mercurial material and to converge on a
 master version that will be added to the Software Carpentry core content.
 
+Tutorials in this repository
+============================
+
+* [W. Trevor King,
+  Git](http://wking.github.com/dvcs-content/wking/version-control.html)
+  (based on the Software Carpentry book)
+
 See Also
 ========
 
