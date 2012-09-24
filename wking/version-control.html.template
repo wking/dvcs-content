@@ -407,10 +407,36 @@ git commit -m "moons: fix typo Calisto -&gt; Callisto." moons.txt
       </p>
 
 <sc-script>
-<sc-command user="wolfman">
-git commit -m "moons: add Amalthea (nicer view of Jupiter)." moons.txt
+<sc-command user="wolfman" git-tick="no">
+git commit -m "moons: add Amalthea" moons.txt
 </sc-command>
 </sc-script>
+
+      <p>
+        Hmm, perhaps that commit message could have been more detailed.
+        Wolfman re-commits, using a more detailed commit message.
+      </p>
+
+<sc-script>
+<sc-command user="wolfman">
+git commit --amend -m "moons: add Amalthea (nicer view of Jupiter)." moons.txt
+</sc-command>
+</sc-script>
+
+      <p class="aside">
+        This is one of the situations where Git is different from many other
+        version control systems.
+        Git provides a rich set of commands for editing your history.
+        For more involved reconstruction,
+        you can <a href="#s:rollback">rewind earlier commits</a>,
+        <a href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html">
+          rebase earlier commits</a>, or
+        <a href="http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html">
+          use scripts to rewrite your whole history</a>.
+        For basic version control,
+        you won't need to dig this deep into the Git toolbox,
+        but it's good to know these features are there if you need them.
+      </p>
 
       <p>
         Wolfman's getting into the swing of things now,
