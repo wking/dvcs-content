@@ -407,10 +407,45 @@ git commit -m "moons: fix typo Calisto -&gt; Callisto." moons.txt
       </p>
 
 <sc-script>
-<sc-command user="wolfman">
-git commit -m "moons: add Amalthea (nicer view of Jupiter)." moons.txt
+<sc-command user="wolfman" git-tick="no">
+git commit -m "moons: add Amalthea" moons.txt
 </sc-command>
 </sc-script>
+
+      <p>
+        Hmm, perhaps that commit message could have been more detailed.
+        Wolfman re-commits, using a more detailed commit message.
+      </p>
+
+<sc-script>
+<sc-command user="wolfman">
+git commit --amend -m "moons: add Amalthea (nicer view of Jupiter)." moons.txt
+</sc-command>
+</sc-script>
+
+      <p class="aside">
+        This is one of the situations where Git is different from many other
+        version control systems.
+        Git provides a rich set of commands for editing your history.
+        For more involved reconstruction,
+        you can <a href="#s:rollback">rewind earlier commits</a>,
+        <a href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html">
+          rebase earlier commits</a>, or
+        <a href="http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html">
+          use scripts to rewrite your whole history</a>.
+        For basic version control,
+        you won't need to dig this deep into the Git toolbox,
+        but it's good to know these features are there if you need them.
+        See the
+        <a href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html#_recovering_from_upstream_rebase">
+          <code>RECOVERING FROM UPSTREAM REBASE</code></a> section of
+        <a href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html">
+          <code>git rebase --help</code></a>
+        for warnings against altering public commits.
+        Altering private commits,
+        where noone else has had a chance to pull the commit,
+        does not suffer from these complications.
+      </p>
 
       <p>
         Wolfman's getting into the swing of things now,
@@ -705,7 +740,7 @@ git log --graph
       <p>
         If Dracula doesn't like working with the interpolated changes directly
         (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>,
-				<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>,
+        <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>,
         there are several tools for displaying differences,
         or <a href="glossary.html#diff">diffs</a>,
         and helping to merge them.
@@ -852,7 +887,7 @@ git reset --hard dc7ec28 --
     <div class="sect" id="s:branches">
 
       <h2>
-        Branched development
+        Branched Development
       </h2>
 
       <p>
@@ -883,7 +918,7 @@ git reset --hard dc7ec28 --
       x---y---z  [shark-tank]
      /         \
 I---a---b---c---d---e  [master]
-     \       \
+     \       :
       r-------s  [1.0.x]
 </pre>
 
