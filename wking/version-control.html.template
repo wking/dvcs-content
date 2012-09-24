@@ -883,7 +883,7 @@ git reset --hard dc7ec28 --
       x---y---z  [shark-tank]
      /         \
 I---a---b---c---d---e  [master]
-     \       \
+     \       :
       r-------s  [1.0.x]
 </pre>
 
