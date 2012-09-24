@@ -9,6 +9,9 @@ See Also
 
 * [C. Titus Brown, Git](http://ged.msu.edu/angus/git-intro.html)
   ([source](https://github.com/ngs-docs/edda/blob/master/doc/git-intro.txt))
+* [C. Titus Brown,
+  Numpy](http://nbviewer.ipython.org/urls/raw.github.com/ngs-docs/ngs-notebooks/master/ngs-11-python-and-graphing.ipynb)
+  ([source](https://github.com/ngs-docs/ngs-notebooks))
 * [Chris Cannam,
   Mercurial](https://code.soundsoftware.ac.uk/projects/easyhg/wiki/SC2012BootcampPlan)
 * [JHU SWC 2012, local
