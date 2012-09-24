@@ -12,6 +12,7 @@ See Also
 * [C. Titus Brown,
   Numpy](http://nbviewer.ipython.org/urls/raw.github.com/ngs-docs/ngs-notebooks/master/ngs-11-python-and-graphing.ipynb)
   ([source](https://github.com/ngs-docs/ngs-notebooks))
+* [Carlos Anderson, Git](https://github.com/redcurry/git_tutorial)
 * [Chris Cannam,
   Mercurial](https://code.soundsoftware.ac.uk/projects/easyhg/wiki/SC2012BootcampPlan)
 * [Ethan White, Numpy](http://www.programmingforbiologists.org/lectures-and-notes)
