@@ -14,6 +14,12 @@ Tutorials in this repository
 See Also
 ========
 
+The canonical tutorial is:
+
+* [The Git Book](http://git-scm.com/book/)
+
+Other put forward on Software Carpentry lists.
+
 * [C. Titus Brown, Git](http://ged.msu.edu/angus/git-intro.html)
   ([source](https://github.com/ngs-docs/edda/blob/master/doc/git-intro.txt))
 * [C. Titus Brown,
