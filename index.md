@@ -18,6 +18,12 @@ Tutorials in this repository
 See Also
 ========
 
+The canonical tutorial is:
+
+* [The Git Book](http://git-scm.com/book/)
+
+Other put forward on Software Carpentry lists.
+
 * [C. Titus Brown, Git](http://ged.msu.edu/angus/git-intro.html)
   ([source](https://github.com/ngs-docs/edda/blob/master/doc/git-intro.txt))
 * [C. Titus Brown,
@@ -28,12 +34,14 @@ See Also
   Mercurial](https://code.soundsoftware.ac.uk/projects/easyhg/wiki/SC2012BootcampPlan)
 * [Ethan White, Numpy](http://www.programmingforbiologists.org/lectures-and-notes)
   ([source](https://github.com/weecology/progbio/))
+* [Jim Weirich, Git](http://gitimmersion.com/)
 * [JHU SWC 2012, local
   Git](https://github.com/JHU-SWC-2012/SWC-bootcamp/tree/master/3a-VersionControlLocal)
 * [JHU SWC 2012, remote
   Git](https://github.com/JHU-SWC-2012/SWC-bootcamp/tree/master/3b-VersionControlRemote)
 * [Katy Huff,
   Git](https://github.com/thehackerwithin/PyTrieste/wiki/Lesson2a-VersionControl)
+* [Roger Dudler, Git](http://rogerdudler.github.com/git-guide/)
 * [SciPy lectures](http://scipy-lectures.github.com/)
 * [Zach Williams,
   Git](https://github.com/codeforamerica/skillshares/tree/master/git_basics)
