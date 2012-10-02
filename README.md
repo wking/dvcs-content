@@ -37,6 +37,7 @@ Other put forward on Software Carpentry lists.
   Git](https://github.com/JHU-SWC-2012/SWC-bootcamp/tree/master/3b-VersionControlRemote)
 * [Katy Huff,
   Git](https://github.com/thehackerwithin/PyTrieste/wiki/Lesson2a-VersionControl)
+* [Roger Dudler, Git](http://rogerdudler.github.com/git-guide/)
 * [SciPy lectures](http://scipy-lectures.github.com/)
 * [Zach Williams,
   Git](https://github.com/codeforamerica/skillshares/tree/master/git_basics)
