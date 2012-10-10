@@ -32,6 +32,7 @@ Other put forward on Software Carpentry lists.
 * [Carlos Anderson, Git](https://github.com/redcurry/git_tutorial)
 * [Chris Cannam,
   Mercurial](https://code.soundsoftware.ac.uk/projects/easyhg/wiki/SC2012BootcampPlan)
+* [Code School, Git](http://try.github.com/)
 * [Ethan White, Numpy](http://www.programmingforbiologists.org/lectures-and-notes)
   ([source](https://github.com/weecology/progbio/))
 * [Jim Weirich, Git](http://gitimmersion.com/)
